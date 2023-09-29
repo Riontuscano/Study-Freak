@@ -3,10 +3,12 @@
     "development"
   ],
   "hints": {
-    "axe/text-alternatives": [
+    "compat-api/css": [
       "default",
       {
-        "frame-title": "off"
+        "ignore": [
+          "backdrop-filter"
+        ]
       }
     ]
   }
