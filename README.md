@@ -1,2 +1,2 @@
 Hello Rion & Glen here !!!!!!!!!!!!!
-Devloping a software to make manage collage material follow for more ^_^
+Devloping a software to make manage collage study material follow for more ^_^
