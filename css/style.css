@@ -15,11 +15,19 @@ embed{
     /* justify-content: rig ht; */
     align-items: center;
 }
+.reviewstyle{
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+    /* border: 2px solid black ; */
+    border-radius: 20px;
+    background-color: rgb(243 244 246);
+    font-size:5px; 
+
+}
 main{
     /* background-color: aquamarine; */
   
     /* background-color:floralwhite; */
-    height: 250vh;
+    height: 300vh;
 }
 .auto-type{
     color:#54009d;
