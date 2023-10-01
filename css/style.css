@@ -7,9 +7,10 @@
 /* font-family: 'Montserrat', sans-serif; */
 /* font-family: 'Poppins', sans-serif; */
 }
-.background{
-    /* background-color: whitesmoke; */
-    /* background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkDxkiAn8Y8PR62-C1rpeguKVhQWs_A5WlyA&usqp=CAU") */
+
+.card-body{
+    background-color: rgb(217 217 217);
+    color: lightslategrey;
 }
 embed{
     /* justify-content: rig ht; */
@@ -18,14 +19,14 @@ embed{
 .reviewstyle{
     box-shadow:0 0 10px rgba(0,0,0,.2);
     /* border: 2px solid black ; */
-    border-radius: 20px;
-    background-color: rgb(243 244 246);
+    border-radius: 12px;
+    background-color: rgb(217 217 217);
     font-size:5px; 
 
 }
 main{
     /* background-color: aquamarine; */
-  
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
     /* background-color:floralwhite; */
     height: 300vh;
 }
@@ -44,6 +45,7 @@ main{
     box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 .autot{
+    background-color: rgb(217 217 217);
     box-sizing: border-box;
     border-radius: 20px;
     backdrop-filter: blur(5px);
