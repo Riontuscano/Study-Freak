@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="icon" href="logomyapp-removebg-preview.png" type="image/x-icon">
+  <link rel="stylesheet" href="/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyFreak-By Bhausaheb Vartak polytechnic</title>
+</head>
+
+<body>
+  <div class="background">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="logomyapp-removebg-preview.png" width="25px" alt="logo">
+          StudyFreak</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown  ">
+              <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Discipline
+            </a>
+            <ul class="dropdown-menu ">
+              <li><a class="dropdown-item" href="first_yr.html">First Year</a></li>
+              <li><a class="dropdown-item" href="second_yr.html">Second Year</a></li>
+              <li><a class="dropdown-item" href="third_yr.html">Third Year</a></li>
+            </ul>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li> -->
+          </ul>
+          <form class="d-flex" role="search">
+            <a class="btn btn-outline-success mx-2" href="signup.html">Sign up</a>
+            <a class="btn btn-success " href="login.html">Login</a>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="size">
+        <div class="image d-flex">
+          <div class="autot col-lg-4 p-3 m-4 "><br><br>
+            <h2><b>Welcome To <span class="auto-type"></span></b></h2>
+            <h4>Learn <span class="auto-type2"></span></h4><br><br>
+            <p class="description">StudyFreak is a comprehensive educational website designed to assist students in their academic journey. 
+              The platform is dedicated to helping learners access a wide range of study materials, including notes and Syllabus, 
+              to enhance their educational experience. </p><br>
+            </div>
+          <div style="justify-content: right;" class="statingimg mx-5"><br><br>
+          <img  src="startingimg.jpg" width="800px" height="400px" alt="studyfreak">
+            </div>
+            <!-- <img class="text-center" src="logomyapp-removebg-preview.png" alt=""> -->
+          </div><br><br><br><br><br>
+
+          <!-- <div class="text-center">
+            <img src="autoimg.jpg" width="500px" class="rounded" alt="abc">
+          </div> -->
+          <h2 class="text-center">Recommended Books</h2><br>
+          <div class="Recommendaion d-flex">
+            <div class="card mx-5" style="width: 18rem;">
+              <img src="https://m.media-amazon.com/images/I/51VOC0wAkJL._AC_UF1000,1000_QL80_.jpg" width="200px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="color:black">Java-Reference Book</h5>
+                <p class="card-text mt-3">"Java: The Complete Reference" is an authoritative and comprehensive guide to the Java programming language, written by renowned Java expert, Herbert Schildt.</p> <br><br>
+                <a href="#" class="btn btn-primary">Get now</a>
+              </div>
+            </div>
+              <div class="card mx-5 " style="width: 18rem;">
+              <img src="https://www.magazinesdirect.com/images/covers/vlarge-BKZ-B6347.jpg" width="100px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="color:black">The Python Book</h5>
+                <p class="card-text mt-3">"Python Programming: A Comprehensive Guide" is a definitive resource for individuals seeking to master the Python programming language. Authored by renowned Python expert.  </p><br><br>
+                <a href="#" class="btn btn-primary">Get now</a>
+              </div>
+            </div>
+              <div class="card mx-5 " style="width: 18rem;">
+              <img src="data:image/jpeg;base64,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" width="90px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="color:black">Javascript-scope & Closures</h5>
+                <p class="card-text mt-4">"JavaScript Scope & Closures: Mastering the Art of Variable Scope and Function Closures" is a comprehensive guide.</p><br>
+                <a href="#" class="btn btn-primary">Get now</a>
+              </div>
+            </div>
+              <div class="card mx-5 " style="width: 18rem;">
+              <img src="https://m.media-amazon.com/images/I/41wA7VVA3jL.jpg" width="200px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="color:black">C++ in one day</h5>
+                <p class="card-text mt-3">"C++ in One Day: A Crash Course for Beginners" is your quick and comprehensive introduction to the C++ programming language.</p><br><br><br>
+                <a href="#" class="btn btn-primary">Get now</a><br>
+              </div>
+            </div>
+          </div>
+          <br><br> <h2 class="text-center">Testimonials</h2><br>
+          <div class="review d-flex">
+            <div class="reviewstyle d-flex col-lg-5  p-3 m-4 ">
+              <h2><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-chat-square-quote-fill" viewBox="0 0 16 16">
+                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm7.194 2.766a1.688 1.688 0 0 0-.227-.272 1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 4C4.776 4 4 4.746 4 5.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 7.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4 1.686 1.686 0 0 0-.227-.273 1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 4c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z"/>
+              </svg>
+              <div class="revstar px-2">
+                <b style="font-size: 20px;">Rating:</b>
+                <!-- <img src="https://static.vecteezy.com/system/resources/thumbnails/009/663/927/small/5-star-rating-review-star-transparent-free-png.png" width="250px" alt="revstar"> -->
+                <img src="star.png" width="30px" alt="revstar">
+                <img src="star.png" width="30px" alt="revstar">
+                <img src="star.png" width="30px" alt="revstar">
+                <img src="star.png" width="30px" alt="revstar">
+                <img src="star.png" width="30px" alt="revstar">
+              </div>
+              <div class="mt-3">
+                <h6 style="color: lightslategray;" class="comment px-2">Study Freak is a study website that has truly transformed the way I approach my academics. Its user-friendly interface, comprehensive collection of study materials, high-quality content, regular updates, and community engagement features make it an indispensable resource for students of all levels. If you're looking to enhance your learning experience and excel in your studies, I wholeheartedly recommend giving Study-Freak a try. It's a true lifesaver for students!</h6>
+              </div>
+              <div class="theperson">
+                <h6 style="color: black;" class="revname px-4 pt-5 ">Rohit Kumar</h6>
+                  <h6 style="color: lightslategray;" class="revprof px-4">Student</h6>
+              </div>
+            </div>
+            <div class="reviewstyle d-flex col-lg-5   p-3 m-4 ">
+              <h2><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-chat-square-quote-fill" viewBox="0 0 16 16">
+                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm7.194 2.766a1.688 1.688 0 0 0-.227-.272 1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 4C4.776 4 4 4.746 4 5.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 7.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4 1.686 1.686 0 0 0-.227-.273 1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 4c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z"/>
+              </svg>
+              <div class="revstar px-2">
+                <b style="font-size: 20px;">Rating:</b>
+                <!-- <img src="https://static.vecteezy.com/system/resources/thumbnails/009/663/927/small/5-star-rating-review-star-transparent-free-png.png" width="250px" alt="revstar"> -->
+                <img src="star.png" width="30px" alt="revstar">
+                <img src="star.png" width="30px" alt="revstar">
+                <img src="star.png" width="30px" alt="revstar">
+                <img src="star.png" width="30px" alt="revstar">
+               
+              </div>
+              <div class="mt-3">
+                <h6 style="color: lightslategray;" class="comment px-2">Awesome source of information for both professor and student <br>Good Work!!!! <img src="thumbup.png" width="18px" alt="thumb-up"></h6>
+              </div>
+              <div class="theperson">
+               <br><br><br> <h6 style="color: black;" class="revname px-4 pt-5">Riya Patil</h6>
+                  <h6 style="color: lightslategray;" class="revprof px-4">Student</h6>
+              </div>
+            </div>
+              <!-- <img class="text-center" src="logomyapp-removebg-preview.png" alt=""> -->
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+      <div class="footer">
+        <footer class="text-center text-lg-start bg-light text-muted">
+          <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      style="background-color: rgba(0, 0, 0, 0.05);">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+        
+        <!-- Right -->
+        <div>
+          <!-- Facebook -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="https://www.facebook.com/rio.tuscano.1" role="button"><svg
+              xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook"
+              viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+            </svg></a>
+
+          <!-- Twitter -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #000000" href="https://twitter.com/Itsmrrio" role="button"><svg
+              xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x"
+              viewBox="0 0 16 16">
+              <path
+                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
+            </svg></a>
+
+
+          <!-- Instagram -->
+          <a class="btn btn-primary btn-floating m-1"
+            style="background-image: linear-gradient(to bottom right,#fa7e1e,#d62976,#962fbf,#4f5bd5)" href="https://www.instagram.com/_unknownplayer1_/"
+            role="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-instagram" viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+            </svg></a>
+
+          <!-- Github -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="https://github.com/Riontuscano" role="button"><svg
+              xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+            </svg></a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <ion-icon name="checkmark-done-outline"></ion-icon></i>Study-Freak
+              </h6>
+              <p>
+                StudyFreak is a online source for coumpter engineering students to get syllabus and notes for free
+              </p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <!-- <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                  
+                  <h6 class="text-uppercase fw-bold mb-4">
+                  Useful links
+                </h6>
+                <p>
+                  <a href="#!" class="text-reset">Pricing</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Settings</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Orders</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Help</a>
+                </p>
+              </div> -->
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4 mx-3">Contact</h6>
+              <p><i class="fas fa-home me-3"></i> Mumbai, NY 10012, India</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                studyfreakbusiness@gmail.com
+              </p>
+              <!-- <p><i class="fas fa-phone me-3"></i> +91 8329838732</p>
+                <p><i class="fas fa-print me-3"></i> +91 8463646619</p> -->
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2023 Copyright <b>|</b>
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">StudyFreak.in </a> <b>|</b> All Rights Reserved
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </div>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="/js/index.js"></script>
+  <script>
+    var typed = new Typed(".auto-type", {
+      strings: ["Study-Freak"],
+      typeSpeed: 30,
+      showCursor: false
+    })
+  </script>
+
+  <script>
+    var typed = new Typed(".auto-type2", {
+      strings: ["C programming", "Java programming ", "C++ programming", "Python programming", "JavaScript programming", "DBMS", "DSA", "PHP"],
+      typeSpeed: 30,
+      backSpeed: 30,
+      showCursor: true,
+      loop: true
+    })
+  </script>
+</body>
+
+</html>
