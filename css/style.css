@@ -26,9 +26,9 @@ embed{
 }
 main{
     /* background-color: aquamarine; */
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    /* background: linear-gradient(135deg, #71b7e6, #9b59b6); */
     /* background-color:floralwhite; */
-    height: 300vh;
+    height: auto;
 }
 .auto-type{
     color:#54009d;
