@@ -9,6 +9,6 @@ if($connect->error){
     die("Connection failed");
 }
 else{
-    echo "Connected successfully";
+   echo "Connected successfully";
 }
 ?>
