@@ -6,6 +6,9 @@
     font-family: 'Open Sans', sans-serif;
 /* font-family: 'Montserrat', sans-serif; */
 /* font-family: 'Poppins', sans-serif; */
+} 
+body{
+    background: #EDEDED;
 }
 embed{
     /* justify-content: rig ht; */
@@ -27,3 +30,4 @@ embed{
     .dropdown-menu > li:hover > .dropdown-submenu {
     display: block;
     }
+   
