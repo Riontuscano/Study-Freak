@@ -52,3 +52,9 @@ main{
     /* padding-left: 40px;
     margin-top: 20px; */
 }
+@media screen and (max-width: 650px) {
+   *{
+      width: 100%;
+      display: block;
+    }
+}
