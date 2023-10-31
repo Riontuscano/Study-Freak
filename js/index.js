@@ -21,6 +21,6 @@
 
 function display(value,name) {
     // console.log(value)
-    document.getElementById("professor").innerHTML = `Professor:-<br> ${name}`;
+    document.getElementById("professor").innerHTML = ` ${name}`;
     document.getElementById("display_n_yr1").setAttribute("src",value);
 }

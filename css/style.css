@@ -3,11 +3,14 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins';
 /* font-family: 'Montserrat', sans-serif; */
 /* font-family: 'Poppins', sans-serif; */
 }
 
+span{
+    color: #ea1538;
+}
 .card-body{
     background-color: rgb(217 217 217);
     color: lightslategrey;
@@ -55,6 +58,7 @@ main{
 @media screen and (max-width: 650px) {
    *{
       width: 100%;
-      display: block;
+      /* display: block; */
     }
 }
+
