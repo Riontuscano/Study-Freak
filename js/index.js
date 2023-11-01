@@ -23,7 +23,7 @@ function display(value, name) {
   // console.log(value)
   if (name != undefined) {
     document.getElementById("professor").innerHTML = `Professor :- `;
-    document.getElementById("professorn").innerHTML = `${name}`;
+    document.getElementById("professorn").innerHTML = `Name of professor`;
     document.getElementById("display_n_yr1").setAttribute("src", value);
   }
   else{
