@@ -5,8 +5,15 @@
   box-sizing: border-box;
   font-family: 'Poppins';
 }
+.mainf{
+  padding-top: 30px;
+}
+.footer{
+
+  background-color: #dddbdb;
+}
 body{
-  height: 100vh;
+  height: 105vh;
   display: flow;
   justify-content: center;
   align-items: center;

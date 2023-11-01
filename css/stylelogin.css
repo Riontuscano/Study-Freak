@@ -8,11 +8,15 @@
   font-family: 'Poppins';
 }
 .body{
+  padding-top: 50px;
+  padding-bottom: 30px;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 body{
   width: 100%;
-  height: 100vh;
+  height: 113vh;
   /* display: flex; */
   align-items: center;
   justify-content: center;
@@ -128,11 +132,14 @@ form input[type="submit"]{
   color: #fff;
   padding: 0;
   border: none;
-  background: #A83D7B;
+  background: #04e022;
   cursor: pointer;
   border-bottom: 2px solid rgba(0,0,0,0.1);
   transition: all 0.3s ease;
 }
 form input[type="submit"]:hover{
-  background: #A83D7B;
+  background: #028f02;
+}
+.footer{
+  background-color: #dddbdb;
 }

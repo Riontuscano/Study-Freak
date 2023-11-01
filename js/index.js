@@ -19,8 +19,17 @@
 // b1 = document.getElementById("fy1_cph");
 // b1.addEventListener( "click",() => { document.getElementById("display_n_yr1").setAttribute("src", "/media/onlieform.pdf");});
 
-function display(value,name) {
-    // console.log(value)
-    document.getElementById("professor").innerHTML = ` ${name}`;
-    document.getElementById("display_n_yr1").setAttribute("src",value);
+function display(value, name) {
+  // console.log(value)
+  if (name != undefined) {
+    document.getElementById("professor").innerHTML = `Professor :- `;
+    document.getElementById("professorn").innerHTML = `${name}`;
+    document.getElementById("display_n_yr1").setAttribute("src", value);
+  }
+  else{
+    document.getElementById("professor").innerHTML = ``;
+    document.getElementById("professorn").innerHTML = ``;
+    document.getElementById("display_n_yr1").setAttribute("src", value);
+  }
+  
 }

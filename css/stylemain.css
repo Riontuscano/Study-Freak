@@ -80,7 +80,15 @@ nav ul li a:hover{
     color: #ea1538;
     text-decoration: solid #fff;
 }
+nav ul li a .bvp:hover{
+    color: #fff;
+    text-decoration: solid #fff;
+}
 
 nav ul li:hover{
     transform: translateY(-3px);
 } 
+
+.container .container2 .content a:hover {
+    color:#ea1538
+}
