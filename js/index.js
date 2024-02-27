@@ -20,11 +20,13 @@
 // b1.addEventListener( "click",() => { document.getElementById("display_n_yr1").setAttribute("src", "/media/onlieform.pdf");});
 
 function display(value, name) {
+  document.getElementById("beforenotes").style.display="none";
   // console.log(value)
   if (name != undefined) {
     document.getElementById("professor").innerHTML = `Professor :- `;
     document.getElementById("professorn").innerHTML = `Name of professor`;
     document.getElementById("display_n_yr1").setAttribute("src", value);
+    document.getElementById("beforenotes").innerHTML="";
   }
   else{
     document.getElementById("professor").innerHTML = ``;
