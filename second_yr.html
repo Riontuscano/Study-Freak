@@ -8,6 +8,177 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyFreak-By Bhausaheb Vartak polytechnic</title>
+    <style>
+      .cart{
+    position: fixed;
+    top:0;
+    right:0;
+    right:-100%;
+    width:800px;
+    max-height: 100vh;
+    min-height: 100vh;
+    /* padding: 20px; */
+    background: var(--outgoing-chat-bg);
+    overflow: hidden;
+    overflow-y: auto !important;
+    
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: 0.5s;
+    
+  }
+  .cart.active{
+    right: 0;
+  }
+  .chat-title{
+    color: white;
+    margin: 10px ;
+  }
+ 
+  #close-cart{
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    padding-right: 20px;
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+  
+.chat-container .chat {
+ 
+    padding: 25px 10px;
+    color:var(--text-color);
+    display: flex;
+    /* justify-content:center; */
+}
+.chat-container .chat.outgoing{
+    background:var(--outgoing-chat-bg);
+    border: 1px solid var(--outgoing-chat-border);
+    
+}
+.chat-container .chat.incoming{
+    background:var(--incoming-chat-bg);
+    border: 1px solid var(--incoming-chat-border);
+
+}
+.chat .chat-details img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+.chat .chat-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* max-width: 1200px;
+    width: 100%; */
+}
+.chat .chat-content span{
+    font-size:1.3rem;
+    color:#54009d;
+}
+.chat .chat-details{
+    display: flex;
+    align-items: center;
+}
+
+.chat .chat-details p{
+    font-size: 12px;
+    padding: 0 40px 0 20px;
+    white-space: prewrap;
+}
+.typing-animation{
+    display: inline-flex;
+    padding-left:25px ;
+}
+.typing-animation .typing-dot{
+    height: 7px;
+    width: 7px;
+    opacity: 0.7;
+    border-radius: 50%;
+    margin:0 3px;
+    background: var(--text-color);
+    animation:animatedot 1.5s var(--delay) ease-in-out infinite;
+}
+
+@keyframes animatedot {
+    0%,44%{
+    transform: translateY(0px);
+}
+22%{
+    transform: translateY(-6px);
+}
+44%{
+    opacity: 0.2;
+}
+}
+
+.typing-container {
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    
+    background: var(--outgoing-chat-bg);
+    border:1px solid var(--incoming-chat-bg); 
+}
+.typing-container .typing-content{
+    max-width: 750px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.typing-content .typing-textarea{
+    width:100%;
+    display:flex;
+    position: relative;
+}
+.typing-textarea textarea{
+    width: 100%;
+    height: 55px;
+    border: none;
+    resize: none;
+    color: var(--text-color);
+    background: var(--incoming-chat-bg);
+    font-size: 14px;
+    padding: 15px 45px 15px 20px;
+    outline: 1px solid var(--incoming-chat-border);
+}
+.typing-textarea textarea::placeholder{
+    color:var(--placeholder-color)
+
+}
+.typing-textarea textarea:valid ~ i{
+    visibility: visible;
+}
+.typing-textarea .bx-send{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 55px;
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    visibility: hidden;
+    cursor: pointer;
+}
+:where(.cart,textarea,body)::-webkit-scrollbar{
+    width: 6px;
+}
+:where(.cart,textarea,body)::-webkit-scrollbar-track{
+   background: var(--incoming-chat-bg);
+   border-radius: 25px;
+}
+:where(.cart,textarea,body)::-webkit-scrollbar-thumb{
+   background: var(--icon-color);
+   border-radius: 25px;
+}
+
+    </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary ">
