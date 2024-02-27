@@ -32,9 +32,6 @@
                 <a class="nav-link" href="about.html">About Us</a>
               </li>
               
-            <!-- <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                  </li> -->
             </ul>
           </div>
         </div>
@@ -42,7 +39,7 @@
     <div class="container">
     <div class="title">ENROLL NOW</div>
     <div class="content">
-      <form action="/php/server.php" method="post">
+      <form action="" >
         <div class="user-details">
           <div class="input-box">
             <span class="details">Full Name</span>
@@ -71,50 +68,17 @@
         </div>
         <span class="details">Gender</span>
         <select class="form-select mt-2" name="gender" id="gender" aria-label="Default select example">
-
           <option value="male">Male</option>
           <option value="female">Female</option>
           <option value="Notdefined">Not Prefer To Answer</option>
         </select>
         </div>
         <div class="button mt-3">
-      <center> <button class="btn btn-success" onclick="done()" name="submit" type="submit">Sumbit</button></center> 
+      <center> <button class="btn btn-success"  id="submit" name="submit" type="submit">Sumbit</button></center> 
         </div>
       </form>
     </div>
-<script>
-  function done() {
-    f=document.getElementById("fname").value
-    u=document.getElementById("uname").value
-    e=document.getElementById("email").value
-    p=document.getElementById("pnum").value
-    pa=document.getElementById("pass").value
-    cp=document.getElementById("cpass").value
-
-    if(f && u && p && pa && cp && p !=null){
-      setTimeout(function() {
-        // Get the alert element by its ID
-        const successAlert = document.getElementById("success-alert");
-
-        successAlert.style.display = "block";
-    }, 4000); //
-    }
-    if(pass.value!=cpass.value){
-      alert("Enter correct password")
-    }
-  }
-    </script>
-    <script>
-      fname=document.getElementById("fname").value
-      uname=document.getElementById("uname").value
-      email=document.getElementById("email").value
-      password=document.getElementById("pass").value
-      // cp=document.getElementById("cpass").value
-     const db=window.openDatabase('data','1.0','data',1*1024*1024)
-
-    </script>
     <div class="mainf">
-
       <div class="footer">
         <div class="text-center p-4" style="background-color: rgba(255, 255, 255, 0.05);">
           © 2023 Copyright <b>|</b>
@@ -122,5 +86,6 @@
         </div>
       </div>
     </div>
+    <script src="/js/signup.js"></script>
 </body>
 </html>

@@ -9,48 +9,93 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="icon" href="/image/logomyapp-removebg-preview.png" type="image/x-icon">
   <link rel="stylesheet" href="/css/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
-  <title>StudyFreak-By Bhausaheb Vartak polytechnic</title>
+  <title>StudyFreak-By Rion Tuscano</title>
 </head>
 
 <body>
-  <div class="background">
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="/image/logomyapp-removebg-preview.png" width="25px" alt="logo">
-         Study<span style="color: #ea1538;">Freak</span></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About Us</a>
-            </li>
-            <li class="nav-item dropdown  ">
-              <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Discipline
-            </a>
-            <ul class="dropdown-menu ">
-              <li><a class="dropdown-item" href="first_yr.html">First Year</a></li>
-              <li><a class="dropdown-item" href="second_yr.html">Second Year</a></li>
-              <li><a class="dropdown-item" href="third_yr.html">Third Year</a></li>
-            </ul>
-          </li>
-          </ul>
+
+    <header>
+      
+      <p href="#" class="logo"style="color:black;">Decor<span>Deck</span></p>
+     
+      <ul class="navbar">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item dropdown  ">
+          <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Discipline
+        </a>
+        <ul class="dropdown-menu ">
+          <li><a class="dropdown-item" href="first_yr.html">First Year</a></li>
+          <li><a class="dropdown-item" href="second_yr.html">Second Year</a></li>
+          <li><a class="dropdown-item" href="third_yr.html">Third Year</a></li>
+        </ul>
+      </li>
+      </ul>
+      <ul class="auth">
+          <!-- <li><a href="#"><ion-icon name="cart" class="nav-cart" id="nav-cart"></ion-icon></a></li> -->
+          <li><a href="#"><i class='bx bx-search-alt' id="nav-cart"></i></a></li>
+          <div class="bx bx-menu" id="menu-icon"></div>
+         
+          <div class="subwrap">
+              <div class="submenu">
+                  <div class="info-user">
+                      <!-- <button id="btn-login" disabled="true" onclick="login()">Log in</button>
+                      <button id="btn-logout" disabled="true" onclick="logout()">Log out</button> -->
+                  </div>
+              </div>
+          </div>
        
-        </div>
-      </div>
-    </nav>
+          </ul>
+           <!-- Cart -->
+           <div class="cart">
+            <center><h2 class="chat-title">Study-Freak AI</h2></center>
+            <div class="chat-container">
+             
+       
+            </div>
+            <div class="typing-container">
+              <div class="typing-content">
+                <div class="typing-textarea">
+                  <textarea name="" id="chat-input" placeholder="Enter your doubt........." required></textarea>
+                  <i class='bx bx-send' id="send-btn"></i>
+                </div>
+              </div>
+            </div>
+         
+              <!-- <h2 class="cart-title">Study Freak AI</h2>
+              <div class="cart-total">
+                </div>
+           <div class="cart-content">
+            <div class="response">
+
+            </div>
+            <form class="input-msg">
+              <div class = "input-group flex" id="cus-rev">
+                  <input type = "text" class = "form-control bg-light-grey" placeholder="Enter Message..........">
+                  <button type = "submit" class = "btn bg-dark text-white text-uppercase">Go</button>
+              </div>
+          </form>
+
+           </div> -->
+         
+              <!-- <button type="button" class="cart-btn" id="cartbtn">Buy Now</button> -->
+              <ion-icon name="arrow-forward-circle" id="close-cart"></ion-icon>
+          
+          </div>
+          
+  </header>
     <main>
       <div class="size">
         <div class="image d-flex">
@@ -279,6 +324,7 @@
       <!-- Copyright -->
     </footer>
   </div>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <script src="/js/index.js"></script>
   <script>
@@ -288,7 +334,8 @@
       showCursor: false 
     })
   </script> 
-
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script>
     var typed = new Typed(".auto-type2", {
       strings: ["C programming", "Java programming ", "C++ programming", "Python programming", "JavaScript programming", "DBMS", "DSA", "PHP"],

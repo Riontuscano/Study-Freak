@@ -33,3 +33,99 @@ function display(value, name) {
   }
   
 }
+let carticon = document.querySelector("#nav-cart");
+let cart = document.querySelector(".cart");
+let cartclose = document.querySelector("#close-cart");
+
+carticon.onclick = () => {
+  cart.classList.add("active");
+};
+
+cartclose.onclick = () => {
+  cart.classList.remove("active");
+};
+let menu = document.querySelector("#menu-icon");
+let navbar = document.querySelector(".navbar");
+
+menu.onclick = () => {
+  navbar.classList.toggle("active");
+};
+
+window.onscroll = () => {
+  navbar.classList.remove("active");
+};
+
+
+const chatInput = document.querySelector("#chat-input");
+const sendButton = document.querySelector("#send-btn");
+const chatcontainer = document.querySelector(".chat-container");
+
+let userText = null;
+
+const createElement =(html,className) => {
+  const chatDiv = document.createElement("div");
+  chatDiv.classList.add("chat",className);
+  chatDiv.innerHTML = html;
+  return chatDiv;
+};
+
+const showtypingdot = () => {
+  const html=`  <div class="chat-content">
+                <div class="chat-details">
+                  <img src="./image/logomyapp.png" alt="sys-img">
+                <div class="typing-animation">
+                  <div class="typing-dot"style="--delay:0.2s"></div>
+                  <div class="typing-dot"style="--delay:0.3s"></div>
+                  <div class="typing-dot"style="--delay:0.4s"></div>
+                </div>
+                </div>
+              </div>`
+  const outgoingChatDiv = createElement(html,"incoming")
+  chatcontainer.appendChild(outgoingChatDiv);
+  getChatResponse();
+}
+const handleOutgoingChat = () => {
+  userText= chatInput.value.trim();
+  // console.log(userText);
+  const html=`<div class="chat-content">
+              <div class="chat-details">
+              <img src="./image/default-profile.png" alt="user-img">
+              <p>${userText}</p>
+              </div>
+            </div>`
+  const outgoingChatDiv = createElement(html,"outgoing")
+  chatcontainer.appendChild(outgoingChatDiv);
+  setTimeout(showtypingdot,500);
+}
+
+sendButton.addEventListener("click",handleOutgoingChat);
+const API_KEY = "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"
+
+const getChatResponse = async () => {
+  const API_URL = " https://api.openai.com/v1/completions";
+
+  const requestOptions ={
+    method:"POST",
+    headers:{
+      "Content-Type": "application/json",
+      "Authorization": `Bearer ${API_KEY}`
+    },
+    body:JSON.stringify(
+      {
+        model: "gpt-3.5-turbo",
+        prompt: userText,
+        max_tokens: 2048,
+        temperature: 0.2,
+        top_p:1,
+        n:1,
+        stop: null
+      }
+    )
+  }
+  try{
+    const response= await(await fetch(API_URL,requestOptions)).JSON();
+    console.log(response);
+  }catch(err){
+    console.log(err);
+  }
+}
