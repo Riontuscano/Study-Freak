@@ -149,7 +149,7 @@
   
 
 span{
-    color: #ea1538;
+    color: #54009d;
 }
 .card-body{
     background-color: rgb(217 217 217);
@@ -263,7 +263,7 @@ main{
 }
 .chat .chat-content span{
     font-size:1.3rem;
-    color:var(--icon-color)
+    color:#54009d;
 }
 .chat .chat-details{
     display: flex;
